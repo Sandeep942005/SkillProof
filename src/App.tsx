@@ -12,6 +12,8 @@ import CandidateDashboard from './pages/CandidateDashboard'
 import CompanyDashboard from './pages/CompanyDashboard'
 import TaskMarketplace from './pages/TaskMarketplace'
 import TaskDetail from './pages/TaskDetail'
+import SubmissionWorkspace from './pages/SubmissionWorkspace'
+import SubmissionResult from './pages/SubmissionResult'
 
 // Main routing configuration
 function App() {
@@ -28,6 +30,8 @@ function App() {
         <Route path="/company/dashboard" element={<CompanyDashboard />} />
         <Route path="/tasks" element={<TaskMarketplace />} />
         <Route path="/tasks/:id" element={<TaskDetail />} />
+        <Route path="/tasks/:id/submit" element={<SubmissionWorkspace />} />
+        <Route path="/submissions/:id/result" element={<SubmissionResult />} />
         <Route path="/wallet" element={<div className="p-8">Wallet (Coming Soon)</div>} />
         <Route path="/profile" element={<div className="p-8">Profile (Coming Soon)</div>} />
         <Route path="/company/talent" element={<div className="p-8">Talent Pool (Coming Soon)</div>} />
