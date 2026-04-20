@@ -1,4 +1,4 @@
-import { HTMLAttributes, forwardRef } from 'react'
+import { forwardRef, type HTMLAttributes } from 'react'
 import { cn } from './Button' // REUSING CN UTILITY
 
 const Card = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
