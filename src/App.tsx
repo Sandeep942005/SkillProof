@@ -19,6 +19,9 @@ import LiveTaskManagement from './pages/LiveTaskManagement'
 import ReviewDashboard from './pages/ReviewDashboard'
 import CandidateProfileView from './pages/CandidateProfileView'
 import TalentPool from './pages/TalentPool'
+import Wallet from './pages/Wallet'
+import JobOffers from './pages/JobOffers'
+import Billing from './pages/Billing'
 
 // Main routing configuration
 function App() {
@@ -37,7 +40,8 @@ function App() {
         <Route path="/tasks/:id" element={<TaskDetail />} />
         <Route path="/tasks/:id/submit" element={<SubmissionWorkspace />} />
         <Route path="/submissions/:id/result" element={<SubmissionResult />} />
-        <Route path="/wallet" element={<div className="p-8">Wallet (Coming Soon)</div>} />
+        <Route path="/wallet" element={<Wallet />} />
+        <Route path="/offers" element={<JobOffers />} />
         <Route path="/profile" element={<div className="p-8">Profile (Coming Soon)</div>} />
 
         {/* Company routes */}
@@ -47,7 +51,7 @@ function App() {
         <Route path="/company/tasks/:id/review" element={<ReviewDashboard />} />
         <Route path="/company/candidates/:id" element={<CandidateProfileView />} />
         <Route path="/company/talent" element={<TalentPool />} />
-        <Route path="/company/billing" element={<div className="p-8">Billing (Coming Soon)</div>} />
+        <Route path="/company/billing" element={<Billing />} />
       </Route>
     </Routes>
   )
